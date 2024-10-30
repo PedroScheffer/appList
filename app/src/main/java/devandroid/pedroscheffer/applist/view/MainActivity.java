@@ -1,6 +1,7 @@
 package devandroid.pedroscheffer.applist.view;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         segundaPessoa.setCursoDesejado("Nutrição");
         segundaPessoa.setTelefoneContato("48 99999-9999");
 
-        dadosPessoa = "Primeiro nome: ";
+        /*dadosPessoa = "Primeiro nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
         dadosPessoa += " Sobrenome: ";
         dadosPessoa += pessoa.getSobreNome();
@@ -53,9 +54,10 @@ public class MainActivity extends AppCompatActivity {
         dadosSegundaPessoa += " Curso Desejado: ";
         dadosSegundaPessoa += segundaPessoa.getCursoDesejado();
         dadosSegundaPessoa += " Telefone de Contato: ";
-        dadosSegundaPessoa += segundaPessoa.getTelefoneContato();
+        dadosSegundaPessoa += segundaPessoa.getTelefoneContato();*/
 
-        int parada = 0;
+        Log.i("POOAndroid","Objeto pessoa: " +pessoa.toString());
+        Log.i("POOAndroid","Objeto outraPessoa: " +segundaPessoa.toString());
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
